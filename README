@@ -1,0 +1,35 @@
+opencnc - python framework for cnc backend
+------------------------------------------
+
+opencnc is a python framework that can be used to setup-up 
+a custom axes sets in a N-axis cnc system and parse gcode
+according.
+
+This python library is design to direct communicate with pwm
+kernel api [1] from Bill Gatliff and generally suppose to use
+the gpio kernel api as backend (not mandatory).
+
+If you need more information about this archs please read files
+inside docs/ directory and docss/machine.pdf for a real example. 
+
+
+USAGE
+--------- 
+This framework define a series of API that can be called from
+a python file. This file should define the number of axes their
+names and correlation between axis and gcode axis definition.
+You can define a custom numbers of axes and names as well as a
+custom proprierties per axis.
+
+For an example of usage see class cnc_3A0T inside cnc.py.
+
+DEVELOP
+----------
+opencnc is opensource software. Feel free to drop me a mail
+for bugs, suggestion, patch and general improvement
+<c.mignanti@gmail.com>
+
+Thank you for using opencnc
+
+1. 
+
